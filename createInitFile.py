@@ -6,9 +6,8 @@
 
 from __future__ import absolute_import, print_function
 from setuptools.config import read_configuration
-import os, copy, platform, subprocess
+import os, platform, subprocess
 thisLoc = os.path.split(__file__)[0]
-# import versioneer
 # get version from file
 with open('version') as f:
     version = f.read().strip()

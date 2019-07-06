@@ -8,7 +8,6 @@ import sys
 from sys import platform
 from distutils.core import setup
 from pkg_resources import parse_version
-# import versioneer
 import psychopy
 version = psychopy.__version__
 
