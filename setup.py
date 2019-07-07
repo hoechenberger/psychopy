@@ -19,8 +19,6 @@ from sys import platform, argv, version_info
 
 
 PY3 = version_info >= (3, 0)
-with open('version') as f:
-    version = f.read().strip()
 
 #
 # Special handling for Anaconda / Miniconda
@@ -95,7 +93,7 @@ setup(name='PsychoPy',
       },
       data_files=dataFiles,
       install_requires=required,
-      version=version)
+      use_scm_version={'write_to': 'version.txt'})
 
 # remove unwanted info about this system post-build
 if writeNewInit:

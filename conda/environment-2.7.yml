@@ -50,6 +50,7 @@ dependencies:
 - requests
 - scipy
 - setuptools
+- setuptools_scm
 - sip
 - six
 - pyglet>=1.3

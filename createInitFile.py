@@ -9,7 +9,7 @@ from setuptools.config import read_configuration
 import os, platform, subprocess
 thisLoc = os.path.split(__file__)[0]
 # get version from file
-with open('version') as f:
+with open('version.txt') as f:
     version = f.read().strip()
 
 
@@ -27,7 +27,7 @@ def createInitFile(dist=None, version=None, sha=None):
     """
     # get default values if None
     if version is None:
-        with open(os.path.join(thisLoc,'version')) as f:
+        with open(os.path.join(thisLoc, 'version.txt')) as f:
             version = f.read().strip()
     if sha is None:
         sha = _getGitShaString(dist)
