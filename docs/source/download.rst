@@ -135,7 +135,7 @@ Anaconda and Miniconda
 
 We provide an `environment file <https://raw.githubusercontent.com/psychopy/psychopy/master/conda/psychopy-env.yml>`_
 that can be used to install PsychoPy and its dependencies. Download the file,
-open your terminal, navigate to the directory you saved to file to, and run::
+open your terminal, navigate to the directory you saved the file to, and run::
 
   conda env create -n psychopy -f psychopy-env.yml
 
